@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/naturewallpaper"
+    app:layoutDescription="@xml/dashboard_scene"
+    tools:context=".dashBoard">
+
+
+    <TextView
+        android:id="@+id/overview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="195dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="Dashboard"
+        android:textColor="#CAD2C5"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/box"
+        android:layout_width="400dp"
+        android:layout_height="570dp"
+        android:layout_marginTop="210dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="30dp"
+        app:cardBackgroundColor="#cad2c5"
+        app:cardUseCompatPadding="true">
+
+
+    <TextView
+        android:id="@+id/textViewTemperature"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Temperature "
+        android:textColor="#354f52"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:drawableBottom="@drawable/customtemperature"
+        android:gravity="center_horizontal"
+        android:drawablePadding="0dp"/>
+        <TextView
+            android:id="@+id/Temperature"
+            android:layout_width="110dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_above="@id/textViewTemperature"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_marginTop="130dp"
+        />
+
+
+    <TextView
+        android:id="@+id/textViewLumiere"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="190dp"
+        android:text="Lumière"
+        android:textColor="#354f52"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:drawableBottom="@drawable/customlumiere"
+        android:gravity="center_horizontal"
+        android:drawablePadding="0dp"
+        />
+        <TextView
+            android:id="@+id/Lumiere"
+            android:layout_width="110dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="190dp"
+            android:layout_above="@id/textViewLumiere"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_marginTop="130dp"
+        />
+
+        <!--        android:gravity="center"-->
+
+
+    <TextView
+        android:id="@+id/textViewPluie"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/textViewTemperature"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="165dp"
+        android:text="Pluie"
+        android:drawableBottom="@drawable/custompluie"
+        android:drawablePadding="0dp"
+        android:textColor="#354f52"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        />
+        <TextView
+            android:id="@+id/Pluie"
+            android:layout_width="110dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_above="@id/textViewPluie"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_marginTop="285dp"
+            />
+    <TextView
+        android:id="@+id/textViewHumidite"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginStart="190dp"
+        android:layout_below="@id/textViewLumiere"
+        android:text="Humidité "
+        android:textColor="#354f52"
+        android:drawableBottom="@drawable/customhumidite"
+        android:drawablePadding="0dp"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        />
+        <TextView
+            android:id="@+id/Humidite"
+            android:layout_width="110dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="190dp"
+            android:layout_above="@id/textViewHumidite"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_marginTop="285dp"
+            />
+
+        <TextView
+            android:id="@+id/textViewGaz"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_below="@id/textViewGaz"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="320dp"
+            android:text="Gaz"
+            android:drawableBottom="@drawable/customgas"
+            android:drawablePadding="0dp"
+            android:textColor="#354f52"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/Gaz"
+            android:layout_width="110dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_above="@id/textViewGaz"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_marginTop="440dp"
+            />
+
+        <TextView
+            android:id="@+id/textViewMotion"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="320dp"
+            android:layout_marginStart="190dp"
+            android:layout_below="@id/textViewLumiere"
+            android:text="Mouvement "
+            android:textColor="#354f52"
+            android:drawableBottom="@drawable/custommotion"
+            android:drawablePadding="0dp"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/Motion"
+            android:layout_width="170dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="160dp"
+            android:layout_above="@id/textViewHumidite"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            android:textSize="15dp"
+            android:layout_marginTop="440dp"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnLedControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#84a98c"
+        android:textColor="#000000"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="760dp"
+        android:text="Allumer LED" />
+
+    <Button
+        android:id="@+id/btnArrosage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#84a98c"
+        android:textColor="#000000"
+        android:layout_marginTop="760dp"
+        android:layout_marginStart="250dp"
+        android:text="Arroser"
+         />
+</RelativeLayout>
